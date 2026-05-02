@@ -68,7 +68,7 @@ ECHO → Digital Pin 10
 
 ---
 
-📳 Cylindrical Vibration Motor (CVM)
+## Cylindrical Vibration Motor (CVM)
 
 The CVM is controlled using an NPN transistor (e.g., 2N2222) because it requires more current than an Arduino digital pin can safely provide.
 
@@ -79,7 +79,7 @@ Base of transistor → Digital Pin 8 (through 1kΩ resistor)
 
 ---
 
-🔋 Power System
+## Power System
 Arduino is powered via USB or USB power bank
 CVM is powered from a 5V supply but controlled via transistor switching
 All grounds (Arduino GND and motor GND) must be connected together (common ground)

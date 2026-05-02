@@ -146,8 +146,11 @@ This project is currently in the prototyping stage. The core system (ultrasonic 
 ##  Author
 
 Name: Yeamlak Fekadu
+
 Age: 14
+
 Country: Ethiopia
+
 Grade: 8
 
 ---

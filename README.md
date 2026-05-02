@@ -45,14 +45,18 @@ This project provides a **wearable, shoulder-mounted obstacle detection system**
 
 ##  Components (BOM)
 
-| Component                   | Quantity | Source            |
-| --------------------------- | -------- | ----------------- |
-| Arduino (Uno or compatible) | 1        | School            |
-| Ultrasonic Sensor (HC-SR04) | 1        | School            |
-| Cylindrical vibration motor | 1        | Purchase          |
-| Jumper Wires                | Multiple | School            |
-| Breadboard                  | 1        | School            |
-| Power Source (USB)          | 1        | purchase          |
+| Component                   | Quantity | Source            |    Purpose                           |    
+| --------------------------- | -------- | ----------------- |  ----------------------------------  |
+| Arduino Uno                 | 1        | School            | Main microcontroller                 |
+| Ultrasonic Sensor (HC-SR04) | 1        | School            | Distance detection                   |
+| Cylindrical vibration motor | 1        | Purchase          | Haptic feedback system               |
+| Jumper Wires                | Multiple | School            | Electrical connections               |
+| 1kΩ Resistor                | 1        | School            | Limits current to transistor base    |
+| Breadboard                  | 1        | School            | Prototyping circuit                  |
+| NPN Transistor  2N2222      | 1        | Purchase          | Motor switching control              |
+| Flyback Diode (1N4007)      | 1        | Purchase          | Protects circuit from voltage spikes |
+| USB Cable                   | 1        | Personal          | Programming and power                |
+| USB Power Bank              | 1        | Purchase          | Portable wearable power source       |
 
  
 ---
@@ -78,8 +82,11 @@ ECHO → Digital Pin 10
 The CVM is controlled using an NPN transistor (e.g., 2N2222) because it requires more current than an Arduino digital pin can safely provide.
 
 CVM (+) → +5V external power supply (or Arduino 5V for testing)
+
 CVM (–) → Collector of NPN transistor
+
 Emitter of transistor → GND
+
 Base of transistor → Digital Pin 8 (through 1kΩ resistor)
 
 ---

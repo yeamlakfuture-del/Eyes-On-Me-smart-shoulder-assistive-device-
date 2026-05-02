@@ -1,1 +1,11 @@
+Ultrasonic Sensor:
+VCC → 5V
+GND → GND
+TRIG → Pin 9
+ECHO → Pin 10
 
+Vibration Motor (CVM):
+Motor + → 5V (external or Arduino)
+Motor - → Collector (2N2222 transistor)
+Emitter → GND
+Base → Pin 8 (via 1kΩ resistor)

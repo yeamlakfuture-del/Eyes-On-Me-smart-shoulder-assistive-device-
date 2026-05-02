@@ -54,35 +54,38 @@ This project provides a **wearable, shoulder-mounted obstacle detection system**
 | Breadboard                  | 1        | School            |
 | Power Source (USB)          | 1        | purchase          |
 
+ 
 ---
 
 ##  Wiring
 
 Typical connections:
+Ultrasonic Sensor (HC-SR04)
+VCC → 5V (Arduino)
+GND → GND (Arduino)
+TRIG → Digital Pin 9
+ECHO → Digital Pin 10
 
- Ultrasonic Sensor (HC-SR04)
-   VCC → 5V (Arduino)
-   GND → GND (Arduino)
-   TRIG → Digital Pin 9
-   ECHO → Digital Pin 10
- 
-(See `/hardware/` folder for diagram)
 ---
- Cylindrical Vibration Motor (CVM)
 
-The CVM is connected through a transistor driver circuit because it requires more current than an Arduino digital pin can safely supply.
+📳 Cylindrical Vibration Motor (CVM)
 
-Connections:
- CVM (+) → +5V external supply (or Arduino 5V if low load testing)
- CVM (–) → Collector of NPN transistor (e.g., 2N2222)
- Emitter of transistor → GND
- Base of transistor → Digital Pin 8 (through 1kΩ resistor)
+The CVM is controlled using an NPN transistor (e.g., 2N2222) because it requires more current than an Arduino digital pin can safely provide.
+
+CVM (+) → +5V external power supply (or Arduino 5V for testing)
+CVM (–) → Collector of NPN transistor
+Emitter of transistor → GND
+Base of transistor → Digital Pin 8 (through 1kΩ resistor)
+
 ---
-Power System
- Arduino is powered via USB or USB power bank
- CVM is powered from 5V supply but controlled via transistor switching
- All grounds (Arduino GND and motor GND) must be connected together (common ground)
+
+🔋 Power System
+Arduino is powered via USB or USB power bank
+CVM is powered from a 5V supply but controlled via transistor switching
+All grounds (Arduino GND and motor GND) must be connected together (common ground)
+
 ---
+
 ##  Firmware
 
 The Arduino code reads distance from the ultrasonic sensor and controls the vibration motor based on proximity.

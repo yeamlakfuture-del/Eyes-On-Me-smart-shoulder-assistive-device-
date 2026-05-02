@@ -67,7 +67,7 @@ Typical connections:
    ECHO → Digital Pin 10
  
 (See `/hardware/` folder for diagram)
-
+---
  Cylindrical Vibration Motor (CVM)
 
 The CVM is connected through a transistor driver circuit because it requires more current than an Arduino digital pin can safely supply.
@@ -77,12 +77,12 @@ Connections:
  CVM (–) → Collector of NPN transistor (e.g., 2N2222)
  Emitter of transistor → GND
  Base of transistor → Digital Pin 8 (through 1kΩ resistor)
-
+---
 Power System
  Arduino is powered via USB or USB power bank
  CVM is powered from 5V supply but controlled via transistor switching
  All grounds (Arduino GND and motor GND) must be connected together (common ground)
-
+---
 ##  Firmware
 
 The Arduino code reads distance from the ultrasonic sensor and controls the vibration motor based on proximity.

@@ -60,10 +60,15 @@ This project provides a **wearable, shoulder-mounted obstacle detection system**
 ##  Wiring
 
 Typical connections:
+
 Ultrasonic Sensor (HC-SR04)
+
 VCC → 5V (Arduino)
+
 GND → GND (Arduino)
+
 TRIG → Digital Pin 9
+
 ECHO → Digital Pin 10
 
 ---

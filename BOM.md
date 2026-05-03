@@ -10,3 +10,12 @@
 | Flyback Diode (1N4007)      | 1        | Purchase          | Protects circuit from voltage spikes |
 | USB Cable                   | 1        | Personal          | Programming and power                |
 | USB Power Bank              | 1        | Purchase          | Portable wearable power source       |
+
+---
+
+| Component                                 | Quantity | Purpose                               | Source                |
+| ----------------------------------------- | -------- | ------------------------------------- | --------------------- |
+| Adjustable Shoulder Strap / Harness       | 1        | Wearable mounting system              | Purchase              |
+| Mounting Base / plastic plate             | 1        | Holds Arduino and components securely | DIY / School          |
+| Velcro Strips / Adhesive Pads             | 5        | Attaches components to strap          | Purchase              |
+| Zip Ties / Cable Ties                     | 5        | Secures wires and components          | School                |

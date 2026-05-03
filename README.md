@@ -139,6 +139,8 @@ The Arduino code reads distance from the ultrasonic sensor and controls the vibr
 * Add voice feedback as an optional feature
 * Integrate wireless connectivity (ESP32)
 * Add AI-based assistance features
+* Improve the wearable design with 3D printing
+* Make it close to a mini AI companion
 
 ---
 

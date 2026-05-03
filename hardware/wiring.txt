@@ -1,11 +1,32 @@
-Ultrasonic Sensor:
-VCC → 5V
-GND → GND
-TRIG → Pin 9
-ECHO → Pin 10
+Typical connections:
 
-Vibration Motor (CVM):
-Motor + → 5V (external or Arduino)
-Motor - → Collector (2N2222 transistor)
-Emitter → GND
-Base → Pin 8 (via 1kΩ resistor)
+Ultrasonic Sensor (HC-SR04)
+
+VCC → 5V (Arduino)
+
+GND → GND (Arduino)
+
+TRIG → Digital Pin 9
+
+ECHO → Digital Pin 10
+
+---
+
+## Cylindrical Vibration Motor (CVM)
+
+The CVM is controlled using an NPN transistor (e.g., 2N2222) because it requires more current than an Arduino digital pin can safely provide.
+
+CVM (+) → +5V external power supply (or Arduino 5V for testing)
+
+CVM (–) → Collector of NPN transistor
+
+Emitter of transistor → GND
+
+Base of transistor → Digital Pin 8 (through 1kΩ resistor)
+
+---
+
+## Power System
+Arduino is powered via USB or USB power bank
+CVM is powered from a 5V supply but controlled via transistor switching
+All grounds (Arduino GND and motor GND) must be connected together (common ground)
